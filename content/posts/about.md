@@ -26,7 +26,10 @@ Dune also attempts to be a usable scripting language, and even offers a few nich
 
 Overall, I wrote Dune to have a complete shell of my own: one that's fast, useful, and pretty. I'm really excited to see what people do with it.
 
-# How do I get started?
+# How Do I Get Started?
 
 You can download and install the latest release of Dune using the instructions in the [Install](/posts/install) section of the documentation. If you're interested in contributing to the project, you can check out the [GitHub repository](https://github.com/adam-mcdaniel/dune) and open an issue or pull request.
 
+# About The Author
+
+[I'm a computer science PhD student](https://adam-mcdaniel.net) at the [University of Tennessee, Knoxville🍊](https://www.youtube.com/watch?v=-8MlEo02u54). Rust is my favorite language, and [I've](https://github.com/adam-mcdaniel/oakc) [written](https://github.com/adam-mcdaniel/harbor) [many](https://github.com/adam-mcdaniel/tsar) [other](https://github.com/adam-mcdaniel/free) [compilers](https://github.com/adam-mcdaniel/xasm). Dune is my most hardened project -- it's my daily driver shell on all my machines! It's one of the few projects I have that I began as a teenager.

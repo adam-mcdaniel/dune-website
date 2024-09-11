@@ -60,8 +60,10 @@
 &lt;p&gt;I put a lot of work into making Dune just fun to use. It&amp;rsquo;s like a neat little operating system itself!&lt;/p&gt;
 &lt;p&gt;Dune also attempts to be a usable scripting language, and even offers a few niche metaprogramming features such as quoting (borrowed from Lisp), operator overloading, and macros!&lt;/p&gt;
 &lt;p&gt;Overall, I wrote Dune to have a complete shell of my own: one that&amp;rsquo;s fast, useful, and pretty. I&amp;rsquo;m really excited to see what people do with it.&lt;/p&gt;
-&lt;h1 id=&#34;how-do-i-get-started&#34;&gt;How do I get started?&lt;/h1&gt;
+&lt;h1 id=&#34;how-do-i-get-started&#34;&gt;How Do I Get Started?&lt;/h1&gt;
 &lt;p&gt;You can download and install the latest release of Dune using the instructions in the &lt;a href=&#34;http://localhost:1313/dune-website/dune-website/posts/install/&#34;&gt;Install&lt;/a&gt; section of the documentation. If you&amp;rsquo;re interested in contributing to the project, you can check out the &lt;a href=&#34;https://github.com/adam-mcdaniel/dune&#34;&gt;GitHub repository&lt;/a&gt; and open an issue or pull request.&lt;/p&gt;
+&lt;h1 id=&#34;about-the-author&#34;&gt;About The Author&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://adam-mcdaniel.net&#34;&gt;I&amp;rsquo;m a computer science PhD student&lt;/a&gt; at the &lt;a href=&#34;https://www.youtube.com/watch?v=-8MlEo02u54&#34;&gt;University of Tennessee, Knoxville🍊&lt;/a&gt;. Rust is my favorite language, and &lt;a href=&#34;https://github.com/adam-mcdaniel/oakc&#34;&gt;I&amp;rsquo;ve&lt;/a&gt; &lt;a href=&#34;https://github.com/adam-mcdaniel/harbor&#34;&gt;written&lt;/a&gt; &lt;a href=&#34;https://github.com/adam-mcdaniel/tsar&#34;&gt;many&lt;/a&gt; &lt;a href=&#34;https://github.com/adam-mcdaniel/free&#34;&gt;other&lt;/a&gt; &lt;a href=&#34;https://github.com/adam-mcdaniel/xasm&#34;&gt;compilers&lt;/a&gt;. Dune is my most hardened project &amp;ndash; it&amp;rsquo;s my daily driver shell on all my machines! It&amp;rsquo;s one of the few projects I have that I began as a teenager.&lt;/p&gt;
 </content>
     </item>
     
