@@ -28,12 +28,12 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/posts/about"
+    url = "/about"
   [[menu.main]]
     identifier = "showcase"
     name = "Showcase"
-    url = "/posts/showcase"
+    url = "/showcase"
   [[menu.main]]
     identifier = "install"
     name = "Install"
-    url = "/posts/install"
+    url = "/install"

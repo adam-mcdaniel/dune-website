@@ -37,7 +37,7 @@
       <description>&lt;h1 id=&#34;piping-and-redirection&#34;&gt;PIPING AND REDIRECTION&lt;/h1&gt;
 &lt;p&gt;Piping and redirection are done with the &lt;code&gt;|&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; operators. Here&amp;rsquo;s some example uses!&lt;/p&gt;
 
-&lt;img src=&#34;http://localhost:1313/dune-website/piping.png&#34;  alt=&#34;Piping and redirection&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../piping.png&#34;  alt=&#34;Piping and redirection&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;table&gt;
@@ -67,7 +67,7 @@
       <content>&lt;h1 id=&#34;piping-and-redirection&#34;&gt;PIPING AND REDIRECTION&lt;/h1&gt;
 &lt;p&gt;Piping and redirection are done with the &lt;code&gt;|&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; operators. Here&amp;rsquo;s some example uses!&lt;/p&gt;
 
-&lt;img src=&#34;http://localhost:1313/dune-website/piping.png&#34;  alt=&#34;Piping and redirection&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../piping.png&#34;  alt=&#34;Piping and redirection&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;table&gt;
@@ -95,33 +95,33 @@
 &lt;h1 id=&#34;standard-library&#34;&gt;STANDARD LIBRARY&lt;/h1&gt;
 &lt;p&gt;Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!&lt;/p&gt;
 
-&lt;img src=&#34;http://localhost:1313/dune-website/math.png&#34;  alt=&#34;Math Library&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../math.png&#34;  alt=&#34;Math Library&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;p&gt;To see the entire standard library available to you, simply enter &lt;code&gt;std&lt;/code&gt; into the command line. This will print out the entire set of nested standard library modules and their functions plus constants!&lt;/p&gt;
 &lt;h1 id=&#34;creating-aliases-for-programs&#34;&gt;CREATING ALIASES FOR PROGRAMS&lt;/h1&gt;
 &lt;p&gt;Dune allows you to create aliases for programs through the &lt;code&gt;let&lt;/code&gt; keyword and a quoted symbol. Below, we bind the quoted symbol &lt;code&gt;&#39;bat&lt;/code&gt; to the symbol &lt;code&gt;cat&lt;/code&gt;. So, whenever we use the symbol &lt;code&gt;cat&lt;/code&gt;, it will evaluate to the symbol &lt;code&gt;bat&lt;/code&gt;.&lt;/p&gt;
 
-&lt;img src=&#34;http://localhost:1313/dune-website/alias.png&#34;  alt=&#34;Alias&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../alias.png&#34;  alt=&#34;Alias&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;h1 id=&#34;macros-in-dune&#34;&gt;MACROS IN DUNE&lt;/h1&gt;
 &lt;p&gt;To write functions that modify your shell&amp;rsquo;s environment and act like commands, use a macro!&lt;/p&gt;
 
-&lt;img src=&#34;http://localhost:1313/dune-website/macros.png&#34;  alt=&#34;Macros&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../macros.png&#34;  alt=&#34;Macros&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;p&gt;Macros, when called with zero arguments, are passed the current working directory. When invoked, they assume the environment of the callee: if you execute macro, it will execute as if you executed the contents of the macro itself with the parameter defined as the argument passed.&lt;/p&gt;
 &lt;h1 id=&#34;functional-programming&#34;&gt;FUNCTIONAL PROGRAMMING&lt;/h1&gt;
 &lt;p&gt;Dune supports functional programming! You can use functions like &lt;code&gt;map&lt;/code&gt;, &lt;code&gt;filter&lt;/code&gt;, and &lt;code&gt;reduce&lt;/code&gt; to manipulate lists and other data structures. Dune also supports anonymous functions and closures with a concise syntax.&lt;/p&gt;
 
-&lt;img src=&#34;http://localhost:1313/dune-website/functional.png&#34;  alt=&#34;Functional Programming&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../functional.png&#34;  alt=&#34;Functional Programming&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;h1 id=&#34;operator-overloading&#34;&gt;OPERATOR OVERLOADING&lt;/h1&gt;
 &lt;p&gt;All of the operators in Dune are implemented as function applications on the symbols that represent them. This means that you can overload operators to do whatever you want!&lt;/p&gt;
 
-&lt;img src=&#34;http://localhost:1313/dune-website/operators.png&#34;  alt=&#34;Operator Overloading&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../operators.png&#34;  alt=&#34;Operator Overloading&#34;  class=&#34;center&#34;    /&gt;
 
 
 </content>

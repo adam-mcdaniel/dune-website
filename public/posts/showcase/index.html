@@ -6,8 +6,7 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="PIPING AND REDIRECTION Piping and redirection are done with the |, &gt;&gt;, and &gt;&gt;&gt; operators. Here&rsquo;s some example uses!
-Operator Description | Pipe the output of the left command to the input of the right command. &gt;&gt; Write the output of the left command to a file. &gt;&gt;&gt; Append the output of the left command to a file. STANDARD LIBRARY Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!
+<meta name="description" content=" ARITHMETIC OPERATORS Below is the list of arithmetic operators available in Dune. These operators each behave similarly to hwo they&rsquo;re used in Python &ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.
 " />
 <meta name="keywords" content="Shell" />
 
@@ -78,8 +77,7 @@ Operator Description | Pipe the output of the left command to the input of the r
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Showcase">
-<meta property="og:description" content="PIPING AND REDIRECTION Piping and redirection are done with the |, &gt;&gt;, and &gt;&gt;&gt; operators. Here&rsquo;s some example uses!
-Operator Description | Pipe the output of the left command to the input of the right command. &gt;&gt; Write the output of the left command to a file. &gt;&gt;&gt; Append the output of the left command to a file. STANDARD LIBRARY Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!
+<meta property="og:description" content=" ARITHMETIC OPERATORS Below is the list of arithmetic operators available in Dune. These operators each behave similarly to hwo they&rsquo;re used in Python &ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.
 " />
 <meta property="og:url" content="http://localhost:1313/dune-website/posts/showcase/" />
 <meta property="og:site_name" content="Dune Shell" />
@@ -126,15 +124,15 @@ Operator Description | Pipe the output of the left command to the input of the r
     <ul class="menu__dropdown">
       
         
-          <li><a href="/dune-website/posts/about">About</a></li>
+          <li><a href="/dune-website/about">About</a></li>
         
       
         
-          <li><a href="/dune-website/posts/install">Install</a></li>
+          <li><a href="/dune-website/install">Install</a></li>
         
       
         
-          <li><a href="/dune-website/posts/showcase">Showcase</a></li>
+          <li><a href="/dune-website/showcase">Showcase</a></li>
         
       
       
@@ -151,15 +149,15 @@ Operator Description | Pipe the output of the left command to the input of the r
     
       
         
-          <li><a href="/dune-website/posts/about" >About</a></li>
+          <li><a href="/dune-website/about" >About</a></li>
         
       
         
-          <li><a href="/dune-website/posts/install" >Install</a></li>
+          <li><a href="/dune-website/install" >Install</a></li>
         
       
         
-          <li><a href="/dune-website/posts/showcase" >Showcase</a></li>
+          <li><a href="/dune-website/showcase" >Showcase</a></li>
         
       
       
@@ -186,12 +184,42 @@ Operator Description | Pipe the output of the left command to the input of the r
   
 
   <div class="post-content"><div>
-        <h1 id="piping-and-redirection">PIPING AND REDIRECTION<a href="#piping-and-redirection" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+        <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="arithmetic-operators">ARITHMETIC OPERATORS<a href="#arithmetic-operators" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Below is the list of arithmetic operators available in Dune. These operators each behave similarly to hwo they&rsquo;re used in Python &ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Operator</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>+</code></td>
+          <td style="text-align: left">Add two expressions.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>-</code></td>
+          <td style="text-align: left">Subtract two expressions.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>*</code></td>
+          <td style="text-align: left">Multiply two expressions.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>//</code></td>
+          <td style="text-align: left">Divide two expressions.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>%</code></td>
+          <td style="text-align: left">Get the remainder after division of two expressions.</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="piping-and-redirection">PIPING AND REDIRECTION<a href="#piping-and-redirection" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Piping and redirection are done with the <code>|</code>, <code>&gt;&gt;</code>, and <code>&gt;&gt;&gt;</code> operators. Here&rsquo;s some example uses!</p>
-
-<img src="/piping.png"  alt="Piping and redirection"  class="center"    />
-
-
 <table>
   <thead>
       <tr>
@@ -205,6 +233,10 @@ Operator Description | Pipe the output of the left command to the input of the r
           <td style="text-align: left">Pipe the output of the left command to the input of the right command.</td>
       </tr>
       <tr>
+          <td style="text-align: left"><code>&lt;&lt;</code></td>
+          <td style="text-align: left">Read a file&rsquo;s contents.</td>
+      </tr>
+      <tr>
           <td style="text-align: left"><code>&gt;&gt;</code></td>
           <td style="text-align: left">Write the output of the left command to a file.</td>
       </tr>
@@ -214,36 +246,105 @@ Operator Description | Pipe the output of the left command to the input of the r
       </tr>
   </tbody>
 </table>
+
+<img src="../../piping.png"  alt="Piping and redirection"  class="center"    />
+
+
+<h1 id="boolean-operators">BOOLEAN OPERATORS<a href="#boolean-operators" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>The basic operators for boolean logic in Dune are listed below. These operators can be used to compare values, perform boolean operations, and index into lists and dictionaries.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Operator</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>!</code></td>
+          <td style="text-align: left">Perform a boolean not for one or many truthy values.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&amp;&amp;</code></td>
+          <td style="text-align: left">Perform a boolean and for a list of truthy values.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>||</code></td>
+          <td style="text-align: left">Perform a boolean or for a list of truthy values.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>!=</code></td>
+          <td style="text-align: left">Compare two values for inequality.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&lt;</code></td>
+          <td style="text-align: left">Determine the order of two values.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&lt;=</code></td>
+          <td style="text-align: left">Determine the order of two values.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>==</code></td>
+          <td style="text-align: left">Compare two values for equality.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&gt;</code></td>
+          <td style="text-align: left">Determine the order of two values.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>&gt;=</code></td>
+          <td style="text-align: left">Determine the order of two values.</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="container-access">CONTAINER ACCESS<a href="#container-access" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>Dune allows you to index into dictionaries and lists using the <code>@</code> operator. This operator can be used to access the value at a given key in a dictionary or the value at a given index in a list.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Operator</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>@</code></td>
+          <td style="text-align: left">Index a dictionary or list.</td>
+      </tr>
+  </tbody>
+</table>
+<p>When used with a list, the <code>@</code> operator is used on a list with a number index (<em><code>list@N</code></em>). When used with a dictionary, the <code>@</code> operator is used on a dictionary with a key index, a symbol or a string (<em><code>dict@key-name</code></em>).</p>
 <h1 id="standard-library">STANDARD LIBRARY<a href="#standard-library" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!</p>
 
-<img src="/math.png"  alt="Math Library"  class="center"    />
+<img src="../../math.png"  alt="Math Library"  class="center"    />
 
 
 <p>To see the entire standard library available to you, simply enter <code>std</code> into the command line. This will print out the entire set of nested standard library modules and their functions plus constants!</p>
 <h1 id="creating-aliases-for-programs">CREATING ALIASES FOR PROGRAMS<a href="#creating-aliases-for-programs" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Dune allows you to create aliases for programs through the <code>let</code> keyword and a quoted symbol. Below, we bind the quoted symbol <code>'bat</code> to the symbol <code>cat</code>. So, whenever we use the symbol <code>cat</code>, it will evaluate to the symbol <code>bat</code>.</p>
 
-<img src="/alias.png"  alt="Alias"  class="center"    />
+<img src="../../alias.png"  alt="Alias"  class="center"    />
 
 
 <h1 id="macros-in-dune">MACROS IN DUNE<a href="#macros-in-dune" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>To write functions that modify your shell&rsquo;s environment and act like commands, use a macro!</p>
 
-<img src="/macros.png"  alt="Macros"  class="center"    />
+<img src="../../macros.png"  alt="Macros"  class="center"    />
 
 
 <p>Macros, when called with zero arguments, are passed the current working directory. When invoked, they assume the environment of the callee: if you execute macro, it will execute as if you executed the contents of the macro itself with the parameter defined as the argument passed.</p>
 <h1 id="functional-programming">FUNCTIONAL PROGRAMMING<a href="#functional-programming" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>Dune supports functional programming! You can use functions like <code>map</code>, <code>filter</code>, and <code>reduce</code> to manipulate lists and other data structures. Dune also supports anonymous functions and closures with a concise syntax.</p>
 
-<img src="/functional.png"  alt="Functional Programming"  class="center"    />
+<img src="../../functional.png"  alt="Functional Programming"  class="center"    />
 
 
 <h1 id="operator-overloading">OPERATOR OVERLOADING<a href="#operator-overloading" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p>All of the operators in Dune are implemented as function applications on the symbols that represent them. This means that you can overload operators to do whatever you want!</p>
 
-<img src="/operators.png"  alt="Operator Overloading"  class="center"    />
+<img src="../../operators.png"  alt="Operator Overloading"  class="center"    />
 
 
 
