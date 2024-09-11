@@ -83,7 +83,7 @@ author = "Adam McDaniel"
 
 # ARITHMETIC OPERATORS
 
-Below is the list of arithmetic operators available in Dune. These operators each behave similarly to hwo they're used in Python -- integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.
+Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they're used in Python -- integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.
 
 | Operator | Description |
 |----------|-------------|
