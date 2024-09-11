@@ -29,11 +29,19 @@ enableRobotsTXT = true
     identifier = "about"
     name = "About"
     url = "/posts/about"
-  [[menu.main]]
-    identifier = "showcase"
-    name = "Showcase"
-    url = "/posts/showcase"
+    weight=10
   [[menu.main]]
     identifier = "install"
     name = "Install"
     url = "/posts/install"
+    weight=20
+  [[menu.main]]
+    identifier = "showcase"
+    name = "Showcase"
+    url = "/posts/showcase"
+    weight=30
+  [[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/adam-mcdaniel/dune"
+    weight=40

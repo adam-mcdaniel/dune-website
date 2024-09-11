@@ -3,7 +3,7 @@
 contentTypeName = "posts"
 
 # if you set this to 0, only submenu trigger will be visible
-showMenuItems = 3
+showMenuItems = 4
 
 # ["orange", "blue", "red", "green", "pink"]
 themeColor = "blue"
