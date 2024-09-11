@@ -6,7 +6,7 @@ enableGitInfo = true
 enableRobotsTXT = true
 
 [params]
-  subtitle = "A simple, retro theme for Hugo"
+  subtitle = "A shell🐚 by the beach🏖️!"
   owner = "Adam McDaniel"
   keywords = "Shell"
   copyright = "Adam McDaniel"
