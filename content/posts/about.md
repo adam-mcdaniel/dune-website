@@ -6,6 +6,8 @@ author = "Adam McDaniel"
 
 # Why Dune?
 
+![Dune Shell](logo.png)
+
 I feel that bash is great in a lot of ways, but it doesn't exactly feel cozy: it's lacking a sort of personal touch, and it's also missing quick and easy customizability. With my last shell, [Atom](https://github.com/adam-mcdaniel/atom), I had accomplished some of the coziness that bash was missing, but I also introduced a lot of really fatal flaws in the syntax and the type system.
 
 Dune, however, is designed completely differently from Atom (although you might notice the similarities in their widget systems). The interpreter itself is standalone, and it holds almost none of the functionality you see in the default distribution of Dune. If you wanted to, you could write a custom frontend and make a unique Dune based shell of your own!
