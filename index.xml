@@ -1,6 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dune Shell</title><link>https://adam-mcdaniel.github.io/dune-website/</link><description>Recent content on Dune Shell</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© Adam McDaniel :: 2021 - 2024</copyright><lastBuildDate>Wed, 11 Sep 2024 02:38:03 -0400</lastBuildDate><atom:link href="https://adam-mcdaniel.github.io/dune-website/index.xml" rel="self" type="application/rss+xml"/><item><title>Install</title><link>https://adam-mcdaniel.github.io/dune-website/posts/install/</link><pubDate>Wed, 11 Sep 2024 02:38:03 -0400</pubDate><guid>https://adam-mcdaniel.github.io/dune-website/posts/install/</guid><description/><content/></item><item><title>About</title><link>https://adam-mcdaniel.github.io/dune-website/posts/about/</link><pubDate>Wed, 11 Sep 2024 01:55:25 -0400</pubDate><guid>https://adam-mcdaniel.github.io/dune-website/posts/about/</guid><description/><content/></item><item><title>Showcase</title><link>https://adam-mcdaniel.github.io/dune-website/posts/showcase/</link><pubDate>Wed, 11 Sep 2024 01:55:12 -0400</pubDate><guid>https://adam-mcdaniel.github.io/dune-website/posts/showcase/</guid><description>&lt;h1 id="piping-and-redirection">PIPING AND REDIRECTION&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dune Shell</title><link>https://adam-mcdaniel.github.io/dune-website/</link><description>Recent content on Dune Shell</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© Adam McDaniel :: 2021 - 2024</copyright><lastBuildDate>Wed, 11 Sep 2024 02:38:03 -0400</lastBuildDate><atom:link href="https://adam-mcdaniel.github.io/dune-website/index.xml" rel="self" type="application/rss+xml"/><item><title>Install</title><link>https://adam-mcdaniel.github.io/dune-website/posts/install/</link><pubDate>Wed, 11 Sep 2024 02:38:03 -0400</pubDate><guid>https://adam-mcdaniel.github.io/dune-website/posts/install/</guid><description/><content/></item><item><title>About</title><link>https://adam-mcdaniel.github.io/dune-website/posts/about/</link><pubDate>Wed, 11 Sep 2024 01:55:25 -0400</pubDate><guid>https://adam-mcdaniel.github.io/dune-website/posts/about/</guid><description/><content/></item><item><title>Showcase</title><link>https://adam-mcdaniel.github.io/dune-website/posts/showcase/</link><pubDate>Wed, 11 Sep 2024 01:55:12 -0400</pubDate><guid>https://adam-mcdaniel.github.io/dune-website/posts/showcase/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="arithmetic-operators">ARITHMETIC OPERATORS&lt;/h1>
+&lt;p>Below is the list of arithmetic operators available in Dune. These operators each behave similarly to hwo they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="arithmetic-operators">ARITHMETIC OPERATORS&lt;/h1>
+&lt;p>Below is the list of arithmetic operators available in Dune. These operators each behave similarly to hwo they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Operator&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>+&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Add two expressions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>-&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Subtract two expressions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>*&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Multiply two expressions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>//&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Divide two expressions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>%&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Get the remainder after division of two expressions.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h1 id="piping-and-redirection">PIPING AND REDIRECTION&lt;/h1>
 &lt;p>Piping and redirection are done with the &lt;code>|&lt;/code>, &lt;code>&amp;gt;&amp;gt;&lt;/code>, and &lt;code>&amp;gt;&amp;gt;&amp;gt;&lt;/code> operators. Here&amp;rsquo;s some example uses!&lt;/p>
-&lt;img src="https://adam-mcdaniel.github.io/dune-website/piping.png" alt="Piping and redirection" class="center" />
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -14,6 +50,10 @@
 &lt;td style="text-align: left">Pipe the output of the left command to the input of the right command.&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;lt;&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Read a file&amp;rsquo;s contents.&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td style="text-align: left">&lt;code>&amp;gt;&amp;gt;&lt;/code>&lt;/td>
 &lt;td style="text-align: left">Write the output of the left command to a file.&lt;/td>
 &lt;/tr>
@@ -23,10 +63,9 @@
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h1 id="standard-library">STANDARD LIBRARY&lt;/h1>
-&lt;p>Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!&lt;/p></description><content>&lt;h1 id="piping-and-redirection">PIPING AND REDIRECTION&lt;/h1>
-&lt;p>Piping and redirection are done with the &lt;code>|&lt;/code>, &lt;code>&amp;gt;&amp;gt;&lt;/code>, and &lt;code>&amp;gt;&amp;gt;&amp;gt;&lt;/code> operators. Here&amp;rsquo;s some example uses!&lt;/p>
-&lt;img src="https://adam-mcdaniel.github.io/dune-website/piping.png" alt="Piping and redirection" class="center" />
+&lt;img src="../../piping.png" alt="Piping and redirection" class="center" />
+&lt;h1 id="boolean-operators">BOOLEAN OPERATORS&lt;/h1>
+&lt;p>The basic operators for boolean logic in Dune are listed below. These operators can be used to compare values, perform boolean operations, and index into lists and dictionaries.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -36,33 +75,74 @@
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>|&lt;/code>&lt;/td>
-&lt;td style="text-align: left">Pipe the output of the left command to the input of the right command.&lt;/td>
+&lt;td style="text-align: left">&lt;code>!&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Perform a boolean not for one or many truthy values.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>&amp;gt;&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">Write the output of the left command to a file.&lt;/td>
+&lt;td style="text-align: left">&lt;code>&amp;amp;&amp;amp;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Perform a boolean and for a list of truthy values.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">&lt;code>&amp;gt;&amp;gt;&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align: left">Append the output of the left command to a file.&lt;/td>
+&lt;td style="text-align: left">&lt;code>||&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Perform a boolean or for a list of truthy values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>!=&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Compare two values for inequality.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Determine the order of two values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;lt;=&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Determine the order of two values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>==&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Compare two values for equality.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Determine the order of two values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;gt;=&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Determine the order of two values.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;h1 id="container-access">CONTAINER ACCESS&lt;/h1>
+&lt;p>Dune allows you to index into dictionaries and lists using the &lt;code>@&lt;/code> operator. This operator can be used to access the value at a given key in a dictionary or the value at a given index in a list.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Operator&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>@&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Index a dictionary or list.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>When used with a list, the &lt;code>@&lt;/code> operator is used on a list with a number index (&lt;em>&lt;code>list@N&lt;/code>&lt;/em>). When used with a dictionary, the &lt;code>@&lt;/code> operator is used on a dictionary with a key index, a symbol or a string (&lt;em>&lt;code>dict@key-name&lt;/code>&lt;/em>).&lt;/p>
 &lt;h1 id="standard-library">STANDARD LIBRARY&lt;/h1>
 &lt;p>Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!&lt;/p>
-&lt;img src="https://adam-mcdaniel.github.io/dune-website/math.png" alt="Math Library" class="center" />
+&lt;img src="../../math.png" alt="Math Library" class="center" />
 &lt;p>To see the entire standard library available to you, simply enter &lt;code>std&lt;/code> into the command line. This will print out the entire set of nested standard library modules and their functions plus constants!&lt;/p>
 &lt;h1 id="creating-aliases-for-programs">CREATING ALIASES FOR PROGRAMS&lt;/h1>
 &lt;p>Dune allows you to create aliases for programs through the &lt;code>let&lt;/code> keyword and a quoted symbol. Below, we bind the quoted symbol &lt;code>'bat&lt;/code> to the symbol &lt;code>cat&lt;/code>. So, whenever we use the symbol &lt;code>cat&lt;/code>, it will evaluate to the symbol &lt;code>bat&lt;/code>.&lt;/p>
-&lt;img src="https://adam-mcdaniel.github.io/dune-website/alias.png" alt="Alias" class="center" />
+&lt;img src="../../alias.png" alt="Alias" class="center" />
 &lt;h1 id="macros-in-dune">MACROS IN DUNE&lt;/h1>
 &lt;p>To write functions that modify your shell&amp;rsquo;s environment and act like commands, use a macro!&lt;/p>
-&lt;img src="https://adam-mcdaniel.github.io/dune-website/macros.png" alt="Macros" class="center" />
+&lt;img src="../../macros.png" alt="Macros" class="center" />
 &lt;p>Macros, when called with zero arguments, are passed the current working directory. When invoked, they assume the environment of the callee: if you execute macro, it will execute as if you executed the contents of the macro itself with the parameter defined as the argument passed.&lt;/p>
 &lt;h1 id="functional-programming">FUNCTIONAL PROGRAMMING&lt;/h1>
 &lt;p>Dune supports functional programming! You can use functions like &lt;code>map&lt;/code>, &lt;code>filter&lt;/code>, and &lt;code>reduce&lt;/code> to manipulate lists and other data structures. Dune also supports anonymous functions and closures with a concise syntax.&lt;/p>
-&lt;img src="https://adam-mcdaniel.github.io/dune-website/functional.png" alt="Functional Programming" class="center" />
+&lt;img src="../../functional.png" alt="Functional Programming" class="center" />
 &lt;h1 id="operator-overloading">OPERATOR OVERLOADING&lt;/h1>
 &lt;p>All of the operators in Dune are implemented as function applications on the symbols that represent them. This means that you can overload operators to do whatever you want!&lt;/p>
-&lt;img src="https://adam-mcdaniel.github.io/dune-website/operators.png" alt="Operator Overloading" class="center" /></content></item></channel></rss>
+&lt;img src="../../operators.png" alt="Operator Overloading" class="center" /></content></item></channel></rss>
