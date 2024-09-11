@@ -1,255 +1,191 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Dune Shell</title>
-    <link>http://localhost:1313/dune-website/</link>
-    <description>Recent content on Dune Shell</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>© Adam McDaniel :: 2021 - 2024</copyright>
-    <lastBuildDate>Wed, 11 Sep 2024 02:38:03 -0400</lastBuildDate><atom:link href="http://localhost:1313/dune-website/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install</title>
-      <link>http://localhost:1313/dune-website/posts/install/</link>
-      <pubDate>Wed, 11 Sep 2024 02:38:03 -0400</pubDate>
-      
-      <guid>http://localhost:1313/dune-website/posts/install/</guid>
-      <description>&lt;h1 id=&#34;install-with-cargo&#34;&gt;Install With Cargo&lt;/h1&gt;
-&lt;p&gt;To install the &lt;code&gt;dunesh&lt;/code&gt; binary on your machine with &lt;code&gt;cargo&lt;/code&gt;, run the following command:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cargo install --git https://github.com/adam-mcdaniel/dune
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;post-install&#34;&gt;Post-Install&lt;/h1&gt;
-&lt;h2 id=&#34;add-to-shell-startup-script&#34;&gt;Add To Shell Startup Script&lt;/h2&gt;
-&lt;p&gt;Once you have &lt;code&gt;dunesh&lt;/code&gt; on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use &lt;code&gt;bash&lt;/code&gt;, add the following line to your &lt;code&gt;~/.bashrc&lt;/code&gt; file:&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;install-with-cargo&#34;&gt;Install With Cargo&lt;/h1&gt;
-&lt;p&gt;To install the &lt;code&gt;dunesh&lt;/code&gt; binary on your machine with &lt;code&gt;cargo&lt;/code&gt;, run the following command:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cargo install --git https://github.com/adam-mcdaniel/dune
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;post-install&#34;&gt;Post-Install&lt;/h1&gt;
-&lt;h2 id=&#34;add-to-shell-startup-script&#34;&gt;Add To Shell Startup Script&lt;/h2&gt;
-&lt;p&gt;Once you have &lt;code&gt;dunesh&lt;/code&gt; on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use &lt;code&gt;bash&lt;/code&gt;, add the following line to your &lt;code&gt;~/.bashrc&lt;/code&gt; file:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# At the end, start dune.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dunesh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Dune doesn&amp;rsquo;t function as a login shell, so it should mainly be used whenever you open a new terminal window or tab. If you want to use Dune in a script, you can call it directly with &lt;code&gt;dunesh&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;create-a-dune-prelude&#34;&gt;Create A Dune Prelude&lt;/h2&gt;
-&lt;p&gt;Dune uses a &lt;code&gt;.dune-prelude&lt;/code&gt; file in the &lt;code&gt;$HOME&lt;/code&gt; directory to setup the environment for your shell. This file is sourced by Dune every time it starts. You can use this file to set environment variables, define functions, or run any other shell commands you want to run every time you start a new shell session!&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/adam-mcdaniel/dune/blob/main/.dune-prelude&#34;&gt;The GitHub repository contains an example &lt;code&gt;.dune-prelude&lt;/code&gt; file that calls a weather API to get the current climate in your area when it starts.&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It&amp;rsquo;s also recommended to create a &lt;code&gt;.dune-secrets&lt;/code&gt; file that your &lt;code&gt;.dune-prelude&lt;/code&gt; can include. This file can contain your API keys and other secrets, while still allowing you to distribute your main config in the &lt;code&gt;.dune-prelude&lt;/code&gt; file.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/dune-website/posts/about/</link>
-      <pubDate>Wed, 11 Sep 2024 01:55:25 -0400</pubDate>
-      
-      <guid>http://localhost:1313/dune-website/posts/about/</guid>
-      <description>&lt;h1 id=&#34;why-dune&#34;&gt;Why Dune?&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;Dune Shell&#34; src=&#34;logo.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I feel that bash is great in a lot of ways, but it doesn&amp;rsquo;t exactly feel cozy: it&amp;rsquo;s lacking a sort of personal touch, and it&amp;rsquo;s also missing quick and easy customizability. With my last shell, &lt;a href=&#34;https://github.com/adam-mcdaniel/atom&#34;&gt;Atom&lt;/a&gt;, I had accomplished some of the coziness that bash was missing, but I also introduced a lot of really fatal flaws in the syntax and the type system.&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;why-dune&#34;&gt;Why Dune?&lt;/h1&gt;
-&lt;p&gt;&lt;img alt=&#34;Dune Shell&#34; src=&#34;logo.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I feel that bash is great in a lot of ways, but it doesn&amp;rsquo;t exactly feel cozy: it&amp;rsquo;s lacking a sort of personal touch, and it&amp;rsquo;s also missing quick and easy customizability. With my last shell, &lt;a href=&#34;https://github.com/adam-mcdaniel/atom&#34;&gt;Atom&lt;/a&gt;, I had accomplished some of the coziness that bash was missing, but I also introduced a lot of really fatal flaws in the syntax and the type system.&lt;/p&gt;
-&lt;p&gt;Dune, however, is designed completely differently from Atom (although you might notice the similarities in their widget systems). The interpreter itself is standalone, and it holds almost none of the functionality you see in the default distribution of Dune. If you wanted to, you could write a custom frontend and make a unique Dune based shell of your own!&lt;/p&gt;
-&lt;p&gt;This frontend implementation turns the coziness dial to 11. Just check out the shell&amp;rsquo;s default startup script!&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-
-&lt;img src=&#34;../../about.png&#34;  alt=&#34;Intro&#34;  class=&#34;left&#34;    /&gt;
-
-
-&lt;p&gt;I put a lot of work into making Dune just fun to use. It&amp;rsquo;s like a neat little operating system itself!&lt;/p&gt;
-&lt;p&gt;Dune also attempts to be a usable scripting language, and even offers a few niche metaprogramming features such as quoting (borrowed from Lisp), operator overloading, and macros!&lt;/p&gt;
-&lt;p&gt;Overall, I wrote Dune to have a complete shell of my own: one that&amp;rsquo;s fast, useful, and pretty. I&amp;rsquo;m really excited to see what people do with it.&lt;/p&gt;
-&lt;h1 id=&#34;how-do-i-get-started&#34;&gt;How Do I Get Started?&lt;/h1&gt;
-&lt;p&gt;You can download and install the latest release of Dune using the instructions in the &lt;a href=&#34;http://localhost:1313/dune-website/dune-website/posts/install/&#34;&gt;Install&lt;/a&gt; section of the documentation. If you&amp;rsquo;re interested in contributing to the project, you can check out the &lt;a href=&#34;https://github.com/adam-mcdaniel/dune&#34;&gt;GitHub repository&lt;/a&gt; and open an issue or pull request.&lt;/p&gt;
-&lt;h1 id=&#34;about-the-author&#34;&gt;About The Author&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://adam-mcdaniel.net&#34;&gt;I&amp;rsquo;m a computer science PhD student&lt;/a&gt; at the &lt;a href=&#34;https://www.youtube.com/watch?v=-8MlEo02u54&#34;&gt;University of Tennessee, Knoxville🍊&lt;/a&gt;. Rust is my favorite language, and &lt;a href=&#34;https://github.com/adam-mcdaniel/oakc&#34;&gt;I&amp;rsquo;ve&lt;/a&gt; &lt;a href=&#34;https://github.com/adam-mcdaniel/harbor&#34;&gt;written&lt;/a&gt; &lt;a href=&#34;https://github.com/adam-mcdaniel/tsar&#34;&gt;many&lt;/a&gt; &lt;a href=&#34;https://github.com/adam-mcdaniel/free&#34;&gt;other&lt;/a&gt; &lt;a href=&#34;https://github.com/adam-mcdaniel/xasm&#34;&gt;compilers&lt;/a&gt;. Dune is my most hardened project &amp;ndash; it&amp;rsquo;s my daily driver shell on all my machines! It&amp;rsquo;s one of the few projects I have that I began as a teenager.&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Showcase</title>
-      <link>http://localhost:1313/dune-website/posts/showcase/</link>
-      <pubDate>Wed, 11 Sep 2024 01:55:12 -0400</pubDate>
-      
-      <guid>http://localhost:1313/dune-website/posts/showcase/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;h1 id=&#34;arithmetic-operators&#34;&gt;ARITHMETIC OPERATORS&lt;/h1&gt;
-&lt;hr&gt;
-&lt;p&gt;Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p&gt;</description>
-      <content>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;h1 id=&#34;arithmetic-operators&#34;&gt;ARITHMETIC OPERATORS&lt;/h1&gt;
-&lt;hr&gt;
-&lt;p&gt;Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Operator&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;+&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Add two expressions.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;-&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Subtract two expressions.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Multiply two expressions.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;//&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Divide two expressions.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;%&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Get the remainder after division of two expressions.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;piping-and-redirection&#34;&gt;PIPING AND REDIRECTION&lt;/h1&gt;
-&lt;p&gt;Piping and redirection are done with the &lt;code&gt;|&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; operators. Here&amp;rsquo;s some example uses!&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Operator&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;|&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Pipe the output of the left command to the input of the right command.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Read a file&amp;rsquo;s contents.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Write the output of the left command to a file.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Append the output of the left command to a file.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;img src=&#34;../../piping.png&#34;  alt=&#34;Piping and redirection&#34;  class=&#34;center&#34;    /&gt;
-
-
-&lt;h1 id=&#34;boolean-operators&#34;&gt;BOOLEAN OPERATORS&lt;/h1&gt;
-&lt;p&gt;The basic operators for boolean logic in Dune are listed below. These operators can be used to compare values, perform boolean operations, and index into lists and dictionaries.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Operator&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;!&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Perform a boolean not for one or many truthy values.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Perform a boolean and for a list of truthy values.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;||&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Perform a boolean or for a list of truthy values.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;!=&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Compare two values for inequality.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Determine the order of two values.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Determine the order of two values.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;==&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Compare two values for equality.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Determine the order of two values.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Determine the order of two values.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;container-access&#34;&gt;CONTAINER ACCESS&lt;/h1&gt;
-&lt;p&gt;Dune allows you to index into dictionaries and lists using the &lt;code&gt;@&lt;/code&gt; operator. This operator can be used to access the value at a given key in a dictionary or the value at a given index in a list.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Operator&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;@&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Index a dictionary or list.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;When used with a list, the &lt;code&gt;@&lt;/code&gt; operator is used on a list with a number index (&lt;em&gt;&lt;code&gt;list@N&lt;/code&gt;&lt;/em&gt;). When used with a dictionary, the &lt;code&gt;@&lt;/code&gt; operator is used on a dictionary with a key index, a symbol or a string (&lt;em&gt;&lt;code&gt;dict@key-name&lt;/code&gt;&lt;/em&gt;).&lt;/p&gt;
-&lt;h1 id=&#34;standard-library&#34;&gt;STANDARD LIBRARY&lt;/h1&gt;
-&lt;hr&gt;
-&lt;p&gt;Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!&lt;/p&gt;
-
-&lt;img src=&#34;../../math.png&#34;  alt=&#34;Math Library&#34;  class=&#34;center&#34;    /&gt;
-
-
-&lt;p&gt;To see the entire standard library available to you, simply enter &lt;code&gt;std&lt;/code&gt; into the command line. This will print out the entire set of nested standard library modules and their functions plus constants!&lt;/p&gt;
-&lt;h1 id=&#34;creating-aliases-for-programs&#34;&gt;CREATING ALIASES FOR PROGRAMS&lt;/h1&gt;
-&lt;hr&gt;
-&lt;p&gt;Dune allows you to create aliases for programs through the &lt;code&gt;let&lt;/code&gt; keyword and a quoted symbol. Below, we bind the quoted symbol &lt;code&gt;&#39;bat&lt;/code&gt; to the symbol &lt;code&gt;cat&lt;/code&gt;. So, whenever we use the symbol &lt;code&gt;cat&lt;/code&gt;, it will evaluate to the symbol &lt;code&gt;bat&lt;/code&gt;.&lt;/p&gt;
-
-&lt;img src=&#34;../../alias.png&#34;  alt=&#34;Alias&#34;  class=&#34;center&#34;    /&gt;
-
-
-&lt;h1 id=&#34;macros-in-dune&#34;&gt;MACROS IN DUNE&lt;/h1&gt;
-&lt;hr&gt;
-&lt;p&gt;To write functions that modify your shell&amp;rsquo;s environment and act like commands, use a macro!&lt;/p&gt;
-
-&lt;img src=&#34;../../macros.png&#34;  alt=&#34;Macros&#34;  class=&#34;center&#34;    /&gt;
-
-
-&lt;p&gt;Macros, when called with zero arguments, are passed the current working directory. When invoked, they assume the environment of the callee: if you execute macro, it will execute as if you executed the contents of the macro itself with the parameter defined as the argument passed.&lt;/p&gt;
-&lt;h1 id=&#34;functional-programming&#34;&gt;FUNCTIONAL PROGRAMMING&lt;/h1&gt;
-&lt;hr&gt;
-&lt;p&gt;Dune supports functional programming! You can use functions like &lt;code&gt;map&lt;/code&gt;, &lt;code&gt;filter&lt;/code&gt;, and &lt;code&gt;reduce&lt;/code&gt; to manipulate lists and other data structures. Dune also supports anonymous functions and closures with a concise syntax.&lt;/p&gt;
-
-&lt;img src=&#34;../../functional.png&#34;  alt=&#34;Functional Programming&#34;  class=&#34;center&#34;    /&gt;
-
-
-&lt;h1 id=&#34;operator-overloading&#34;&gt;OPERATOR OVERLOADING&lt;/h1&gt;
-&lt;hr&gt;
-&lt;p&gt;All of the operators in Dune are implemented as function applications on the symbols that represent them. This means that you can overload operators to do whatever you want!&lt;/p&gt;
-
-&lt;img src=&#34;../../operators.png&#34;  alt=&#34;Operator Overloading&#34;  class=&#34;center&#34;    /&gt;
-
-
-</content>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dune Shell</title><link>https://adam-mcdaniel.github.io/dune-website/</link><description>Recent content on Dune Shell</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© Adam McDaniel :: 2021 - 2024</copyright><lastBuildDate>Wed, 11 Sep 2024 02:38:03 -0400</lastBuildDate><atom:link href="https://adam-mcdaniel.github.io/dune-website/index.xml" rel="self" type="application/rss+xml"/><item><title>Install</title><link>https://adam-mcdaniel.github.io/dune-website/posts/install/</link><pubDate>Wed, 11 Sep 2024 02:38:03 -0400</pubDate><guid>https://adam-mcdaniel.github.io/dune-website/posts/install/</guid><description>&lt;h1 id="install-with-cargo">Install With Cargo&lt;/h1>
+&lt;p>To install the &lt;code>dunesh&lt;/code> binary on your machine with &lt;code>cargo&lt;/code>, run the following command:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ cargo install --git https://github.com/adam-mcdaniel/dune
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="post-install">Post-Install&lt;/h1>
+&lt;h2 id="create-a-dune-prelude">Create A Dune Prelude&lt;/h2>
+&lt;p>Dune uses a &lt;code>.dune-prelude&lt;/code> file in the &lt;code>$HOME&lt;/code> directory to setup the environment for your shell. This file is sourced by Dune every time it starts. You can use this file to set environment variables, define functions, or run any other shell commands you want to run every time you start a new shell session!&lt;/p></description><content>&lt;h1 id="install-with-cargo">Install With Cargo&lt;/h1>
+&lt;p>To install the &lt;code>dunesh&lt;/code> binary on your machine with &lt;code>cargo&lt;/code>, run the following command:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ cargo install --git https://github.com/adam-mcdaniel/dune
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="post-install">Post-Install&lt;/h1>
+&lt;h2 id="create-a-dune-prelude">Create A Dune Prelude&lt;/h2>
+&lt;p>Dune uses a &lt;code>.dune-prelude&lt;/code> file in the &lt;code>$HOME&lt;/code> directory to setup the environment for your shell. This file is sourced by Dune every time it starts. You can use this file to set environment variables, define functions, or run any other shell commands you want to run every time you start a new shell session!&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a href="https://github.com/adam-mcdaniel/dune/blob/main/.dune-prelude">The GitHub repository contains an example &lt;code>.dune-prelude&lt;/code> file that calls a weather API to get the current climate in your area when it starts.&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>It&amp;rsquo;s also recommended to create a &lt;code>.dune-secrets&lt;/code> file that your &lt;code>.dune-prelude&lt;/code> can include. This file can contain your API keys and other secrets, while still allowing you to distribute your main config in the &lt;code>.dune-prelude&lt;/code> file.&lt;/p>
+&lt;h2 id="add-to-shell-startup-script">Add To Shell Startup Script&lt;/h2>
+&lt;p>Dune doesn&amp;rsquo;t function as a login shell, so it should mainly be used whenever you open a new terminal window or tab. If you want to use Dune in a script, you can call it directly with &lt;code>dunesh&lt;/code>.&lt;/p>
+&lt;p>Once you have &lt;code>dunesh&lt;/code> on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use &lt;code>bash&lt;/code>, add the following line to your &lt;code>~/.bashrc&lt;/code> file:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># At the end, start dune.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dunesh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></content></item><item><title>About</title><link>https://adam-mcdaniel.github.io/dune-website/posts/about/</link><pubDate>Wed, 11 Sep 2024 01:55:25 -0400</pubDate><guid>https://adam-mcdaniel.github.io/dune-website/posts/about/</guid><description>&lt;h1 id="why-dune">Why Dune?&lt;/h1>
+&lt;img src="https://adam-mcdaniel.github.io/dune-website/logo.png" alt="Intro" class="center" />
+&lt;p>I feel that bash is great in a lot of ways, but it doesn&amp;rsquo;t exactly feel cozy: it&amp;rsquo;s lacking a sort of personal touch, and it&amp;rsquo;s also missing quick and easy customizability. With my last shell, &lt;a href="https://github.com/adam-mcdaniel/atom">Atom&lt;/a>, I had accomplished some of the coziness that bash was missing, but I also introduced a lot of really fatal flaws in the syntax and the type system.&lt;/p></description><content>&lt;h1 id="why-dune">Why Dune?&lt;/h1>
+&lt;img src="https://adam-mcdaniel.github.io/dune-website/logo.png" alt="Intro" class="center" />
+&lt;p>I feel that bash is great in a lot of ways, but it doesn&amp;rsquo;t exactly feel cozy: it&amp;rsquo;s lacking a sort of personal touch, and it&amp;rsquo;s also missing quick and easy customizability. With my last shell, &lt;a href="https://github.com/adam-mcdaniel/atom">Atom&lt;/a>, I had accomplished some of the coziness that bash was missing, but I also introduced a lot of really fatal flaws in the syntax and the type system.&lt;/p>
+&lt;p>Dune, however, is designed completely differently from Atom (although you might notice the similarities in their widget systems). The interpreter itself is standalone, and it holds almost none of the functionality you see in the default distribution of Dune. If you wanted to, you could write a custom frontend and make a unique Dune based shell of your own!&lt;/p>
+&lt;p>This frontend implementation turns the coziness dial to 11. Just check out the shell&amp;rsquo;s default startup script!&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;img src="../../about.png" alt="Intro" class="center" />
+&lt;p>I put a lot of work into making Dune just fun to use. It&amp;rsquo;s like a neat little operating system itself!&lt;/p>
+&lt;p>Dune also attempts to be a usable scripting language, and even offers a few niche metaprogramming features such as quoting (borrowed from Lisp), operator overloading, and macros!&lt;/p>
+&lt;p>Overall, I wrote Dune to have a complete shell of my own: one that&amp;rsquo;s fast, useful, and pretty. I&amp;rsquo;m really excited to see what people do with it.&lt;/p>
+&lt;h1 id="how-do-i-get-started">How Do I Get Started?&lt;/h1>
+&lt;p>You can download and install the latest release of Dune using the instructions in the &lt;a href="https://adam-mcdaniel.github.io/dune-website/dune-website/posts/install/">Install&lt;/a> section of the documentation. If you&amp;rsquo;re interested in contributing to the project, you can check out the &lt;a href="https://github.com/adam-mcdaniel/dune">GitHub repository&lt;/a> and open an issue or pull request.&lt;/p>
+&lt;h1 id="about-the-author">About The Author&lt;/h1>
+&lt;p>&lt;a href="https://adam-mcdaniel.net">I&amp;rsquo;m a computer science PhD student&lt;/a> at the &lt;a href="https://www.youtube.com/watch?v=-8MlEo02u54">University of Tennessee, Knoxville🍊&lt;/a>. Rust is my favorite language, and &lt;a href="https://github.com/adam-mcdaniel/oakc">I&amp;rsquo;ve&lt;/a> &lt;a href="https://github.com/adam-mcdaniel/harbor">written&lt;/a> &lt;a href="https://github.com/adam-mcdaniel/tsar">many&lt;/a> &lt;a href="https://github.com/adam-mcdaniel/free">other&lt;/a> &lt;a href="https://github.com/adam-mcdaniel/xasm">compilers&lt;/a>. Dune is my most hardened project &amp;ndash; it&amp;rsquo;s my daily driver shell on all my machines! It&amp;rsquo;s one of the few projects I have that I began as a teenager.&lt;/p></content></item><item><title>Showcase</title><link>https://adam-mcdaniel.github.io/dune-website/posts/showcase/</link><pubDate>Wed, 11 Sep 2024 01:55:12 -0400</pubDate><guid>https://adam-mcdaniel.github.io/dune-website/posts/showcase/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="arithmetic-operators">ARITHMETIC OPERATORS&lt;/h1>
+&lt;hr>
+&lt;p>Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p></description><content>&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="arithmetic-operators">ARITHMETIC OPERATORS&lt;/h1>
+&lt;hr>
+&lt;p>Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Operator&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>+&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Add two expressions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>-&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Subtract two expressions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>*&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Multiply two expressions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>//&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Divide two expressions.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>%&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Get the remainder after division of two expressions.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h1 id="piping-and-redirection">PIPING AND REDIRECTION&lt;/h1>
+&lt;p>Piping and redirection are done with the &lt;code>|&lt;/code>, &lt;code>&amp;gt;&amp;gt;&lt;/code>, and &lt;code>&amp;gt;&amp;gt;&amp;gt;&lt;/code> operators. Here&amp;rsquo;s some example uses!&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Operator&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>|&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Pipe the output of the left command to the input of the right command.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;lt;&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Read a file&amp;rsquo;s contents.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;gt;&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Write the output of the left command to a file.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;gt;&amp;gt;&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Append the output of the left command to a file.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;img src="../../piping.png" alt="Piping and redirection" class="center" />
+&lt;h1 id="boolean-operators">BOOLEAN OPERATORS&lt;/h1>
+&lt;p>The basic operators for boolean logic in Dune are listed below. These operators can be used to compare values, perform boolean operations, and index into lists and dictionaries.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Operator&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>!&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Perform a boolean not for one or many truthy values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;amp;&amp;amp;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Perform a boolean and for a list of truthy values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>||&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Perform a boolean or for a list of truthy values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>!=&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Compare two values for inequality.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Determine the order of two values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;lt;=&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Determine the order of two values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>==&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Compare two values for equality.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Determine the order of two values.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>&amp;gt;=&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Determine the order of two values.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h1 id="container-access">CONTAINER ACCESS&lt;/h1>
+&lt;p>Dune allows you to index into dictionaries and lists using the &lt;code>@&lt;/code> operator. This operator can be used to access the value at a given key in a dictionary or the value at a given index in a list.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Operator&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">&lt;code>@&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Index a dictionary or list.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>When used with a list, the &lt;code>@&lt;/code> operator is used on a list with a number index (&lt;em>&lt;code>list@N&lt;/code>&lt;/em>). When used with a dictionary, the &lt;code>@&lt;/code> operator is used on a dictionary with a key index, a symbol or a string (&lt;em>&lt;code>dict@key-name&lt;/code>&lt;/em>).&lt;/p>
+&lt;h1 id="standard-library">STANDARD LIBRARY&lt;/h1>
+&lt;hr>
+&lt;p>Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!&lt;/p>
+&lt;img src="../../math.png" alt="Math Library" class="center" />
+&lt;p>To see the entire standard library available to you, simply enter &lt;code>std&lt;/code> into the command line. This will print out the entire set of nested standard library modules and their functions plus constants!&lt;/p>
+&lt;h1 id="creating-aliases-for-programs">CREATING ALIASES FOR PROGRAMS&lt;/h1>
+&lt;hr>
+&lt;p>Dune allows you to create aliases for programs through the &lt;code>let&lt;/code> keyword and a quoted symbol. Below, we bind the quoted symbol &lt;code>'bat&lt;/code> to the symbol &lt;code>cat&lt;/code>. So, whenever we use the symbol &lt;code>cat&lt;/code>, it will evaluate to the symbol &lt;code>bat&lt;/code>.&lt;/p>
+&lt;img src="../../alias.png" alt="Alias" class="center" />
+&lt;h1 id="macros-in-dune">MACROS IN DUNE&lt;/h1>
+&lt;hr>
+&lt;p>To write functions that modify your shell&amp;rsquo;s environment and act like commands, use a macro!&lt;/p>
+&lt;img src="../../macros.png" alt="Macros" class="center" />
+&lt;p>Macros, when called with zero arguments, are passed the current working directory. When invoked, they assume the environment of the callee: if you execute macro, it will execute as if you executed the contents of the macro itself with the parameter defined as the argument passed.&lt;/p>
+&lt;h1 id="functional-programming">FUNCTIONAL PROGRAMMING&lt;/h1>
+&lt;hr>
+&lt;p>Dune supports functional programming! You can use functions like &lt;code>map&lt;/code>, &lt;code>filter&lt;/code>, and &lt;code>reduce&lt;/code> to manipulate lists and other data structures. Dune also supports anonymous functions and closures with a concise syntax.&lt;/p>
+&lt;img src="../../functional.png" alt="Functional Programming" class="center" />
+&lt;h1 id="operator-overloading">OPERATOR OVERLOADING&lt;/h1>
+&lt;hr>
+&lt;p>All of the operators in Dune are implemented as function applications on the symbols that represent them. This means that you can overload operators to do whatever you want!&lt;/p>
+&lt;img src="../../operators.png" alt="Operator Overloading" class="center" /></content></item></channel></rss>
