@@ -6,7 +6,7 @@ author = "Adam McDaniel"
 
 # Why Dune?
 
-![Dune Shell](logo.png)
+{{< image src="https://adam-mcdaniel.github.io/dune-website/logo.png" alt="Intro" position="center" >}}
 
 I feel that bash is great in a lot of ways, but it doesn't exactly feel cozy: it's lacking a sort of personal touch, and it's also missing quick and easy customizability. With my last shell, [Atom](https://github.com/adam-mcdaniel/atom), I had accomplished some of the coziness that bash was missing, but I also introduced a lot of really fatal flaws in the syntax and the type system.
 
@@ -20,7 +20,7 @@ This frontend implementation turns the coziness dial to 11. Just check out the s
   <img src="../../bye.png" width="32%"/>
 </p> -->
 
-{{< image src="../../about.png" alt="Intro" position="left" >}}
+{{< image src="../../about.png" alt="Intro" position="center" >}}
 
 I put a lot of work into making Dune just fun to use. It's like a neat little operating system itself!
 
