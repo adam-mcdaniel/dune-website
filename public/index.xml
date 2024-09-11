@@ -14,8 +14,28 @@
       <pubDate>Wed, 11 Sep 2024 02:38:03 -0400</pubDate>
       
       <guid>http://localhost:1313/dune-website/posts/install/</guid>
-      <description></description>
-      <content></content>
+      <description>&lt;h1 id=&#34;install-with-cargo&#34;&gt;Install With Cargo&lt;/h1&gt;
+&lt;p&gt;To install the &lt;code&gt;dunesh&lt;/code&gt; binary on your machine with &lt;code&gt;cargo&lt;/code&gt;, run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cargo install --git https://github.com/adam-mcdaniel/dune
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;post-install&#34;&gt;Post-Install&lt;/h1&gt;
+&lt;h2 id=&#34;add-to-shell-startup-script&#34;&gt;Add To Shell Startup Script&lt;/h2&gt;
+&lt;p&gt;Once you have &lt;code&gt;dunesh&lt;/code&gt; on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use &lt;code&gt;bash&lt;/code&gt;, add the following line to your &lt;code&gt;~/.bashrc&lt;/code&gt; file:&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;install-with-cargo&#34;&gt;Install With Cargo&lt;/h1&gt;
+&lt;p&gt;To install the &lt;code&gt;dunesh&lt;/code&gt; binary on your machine with &lt;code&gt;cargo&lt;/code&gt;, run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cargo install --git https://github.com/adam-mcdaniel/dune
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;post-install&#34;&gt;Post-Install&lt;/h1&gt;
+&lt;h2 id=&#34;add-to-shell-startup-script&#34;&gt;Add To Shell Startup Script&lt;/h2&gt;
+&lt;p&gt;Once you have &lt;code&gt;dunesh&lt;/code&gt; on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use &lt;code&gt;bash&lt;/code&gt;, add the following line to your &lt;code&gt;~/.bashrc&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# At the end, start dune.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dunesh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Dune doesn&amp;rsquo;t function as a login shell, so it should mainly be used whenever you open a new terminal window or tab. If you want to use Dune in a script, you can call it directly with &lt;code&gt;dunesh&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-dune-prelude&#34;&gt;Create A Dune Prelude&lt;/h2&gt;
+&lt;p&gt;Dune uses a &lt;code&gt;.dune-prelude&lt;/code&gt; file in the &lt;code&gt;$HOME&lt;/code&gt; directory to setup the environment for your shell. This file is sourced by Dune every time it starts. You can use this file to set environment variables, define functions, or run any other shell commands you want to run every time you start a new shell session!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/adam-mcdaniel/dune/blob/main/.dune-prelude&#34;&gt;The GitHub repository contains an example &lt;code&gt;.dune-prelude&lt;/code&gt; file that calls a weather API to get the current climate in your area when it starts.&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s also recommended to create a &lt;code&gt;.dune-secrets&lt;/code&gt; file that your &lt;code&gt;.dune-prelude&lt;/code&gt; can include. This file can contain your API keys and other secrets, while still allowing you to distribute your main config in the &lt;code&gt;.dune-prelude&lt;/code&gt; file.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -24,8 +44,25 @@
       <pubDate>Wed, 11 Sep 2024 01:55:25 -0400</pubDate>
       
       <guid>http://localhost:1313/dune-website/posts/about/</guid>
-      <description></description>
-      <content></content>
+      <description>&lt;h1 id=&#34;why-dune&#34;&gt;Why Dune?&lt;/h1&gt;
+&lt;p&gt;I feel that bash is great in a lot of ways, but it doesn&amp;rsquo;t exactly feel cozy: it&amp;rsquo;s lacking a sort of personal touch, and it&amp;rsquo;s also missing quick and easy customizability. With my last shell, &lt;a href=&#34;https://github.com/adam-mcdaniel/atom&#34;&gt;Atom&lt;/a&gt;, I had accomplished some of the coziness that bash was missing, but I also introduced a lot of really fatal flaws in the syntax and the type system.&lt;/p&gt;
+&lt;p&gt;Dune, however, is designed completely differently from Atom (although you might notice the similarities in their widget systems). The interpreter itself is standalone, and it holds almost none of the functionality you see in the default distribution of Dune. If you wanted to, you could write a custom frontend and make a unique Dune based shell of your own!&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;why-dune&#34;&gt;Why Dune?&lt;/h1&gt;
+&lt;p&gt;I feel that bash is great in a lot of ways, but it doesn&amp;rsquo;t exactly feel cozy: it&amp;rsquo;s lacking a sort of personal touch, and it&amp;rsquo;s also missing quick and easy customizability. With my last shell, &lt;a href=&#34;https://github.com/adam-mcdaniel/atom&#34;&gt;Atom&lt;/a&gt;, I had accomplished some of the coziness that bash was missing, but I also introduced a lot of really fatal flaws in the syntax and the type system.&lt;/p&gt;
+&lt;p&gt;Dune, however, is designed completely differently from Atom (although you might notice the similarities in their widget systems). The interpreter itself is standalone, and it holds almost none of the functionality you see in the default distribution of Dune. If you wanted to, you could write a custom frontend and make a unique Dune based shell of your own!&lt;/p&gt;
+&lt;p&gt;This frontend implementation turns the coziness dial to 11. Just check out the shell&amp;rsquo;s default startup script!&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+
+&lt;img src=&#34;../../about.png&#34;  alt=&#34;Intro&#34;  class=&#34;left&#34;    /&gt;
+
+
+&lt;p&gt;I put a lot of work into making Dune just fun to use. It&amp;rsquo;s like a neat little operating system itself!&lt;/p&gt;
+&lt;p&gt;Dune also attempts to be a usable scripting language, and even offers a few niche metaprogramming features such as quoting (borrowed from Lisp), operator overloading, and macros!&lt;/p&gt;
+&lt;p&gt;Overall, I wrote Dune to have a complete shell of my own: one that&amp;rsquo;s fast, useful, and pretty. I&amp;rsquo;m really excited to see what people do with it.&lt;/p&gt;
+&lt;h1 id=&#34;how-do-i-get-started&#34;&gt;How do I get started?&lt;/h1&gt;
+&lt;p&gt;You can download and install the latest release of Dune using the instructions in the &lt;a href=&#34;http://localhost:1313/dune-website/dune-website/posts/install/&#34;&gt;Install&lt;/a&gt; section of the documentation. If you&amp;rsquo;re interested in contributing to the project, you can check out the &lt;a href=&#34;https://github.com/adam-mcdaniel/dune&#34;&gt;GitHub repository&lt;/a&gt; and open an issue or pull request.&lt;/p&gt;
+</content>
     </item>
     
     <item>
@@ -37,10 +74,12 @@
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h1 id=&#34;arithmetic-operators&#34;&gt;ARITHMETIC OPERATORS&lt;/h1&gt;
+&lt;hr&gt;
 &lt;p&gt;Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p&gt;</description>
       <content>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h1 id=&#34;arithmetic-operators&#34;&gt;ARITHMETIC OPERATORS&lt;/h1&gt;
+&lt;hr&gt;
 &lt;p&gt;Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -170,6 +209,7 @@
 &lt;/table&gt;
 &lt;p&gt;When used with a list, the &lt;code&gt;@&lt;/code&gt; operator is used on a list with a number index (&lt;em&gt;&lt;code&gt;list@N&lt;/code&gt;&lt;/em&gt;). When used with a dictionary, the &lt;code&gt;@&lt;/code&gt; operator is used on a dictionary with a key index, a symbol or a string (&lt;em&gt;&lt;code&gt;dict@key-name&lt;/code&gt;&lt;/em&gt;).&lt;/p&gt;
 &lt;h1 id=&#34;standard-library&#34;&gt;STANDARD LIBRARY&lt;/h1&gt;
+&lt;hr&gt;
 &lt;p&gt;Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!&lt;/p&gt;
 
 &lt;img src=&#34;../../math.png&#34;  alt=&#34;Math Library&#34;  class=&#34;center&#34;    /&gt;
@@ -177,12 +217,14 @@
 
 &lt;p&gt;To see the entire standard library available to you, simply enter &lt;code&gt;std&lt;/code&gt; into the command line. This will print out the entire set of nested standard library modules and their functions plus constants!&lt;/p&gt;
 &lt;h1 id=&#34;creating-aliases-for-programs&#34;&gt;CREATING ALIASES FOR PROGRAMS&lt;/h1&gt;
+&lt;hr&gt;
 &lt;p&gt;Dune allows you to create aliases for programs through the &lt;code&gt;let&lt;/code&gt; keyword and a quoted symbol. Below, we bind the quoted symbol &lt;code&gt;&#39;bat&lt;/code&gt; to the symbol &lt;code&gt;cat&lt;/code&gt;. So, whenever we use the symbol &lt;code&gt;cat&lt;/code&gt;, it will evaluate to the symbol &lt;code&gt;bat&lt;/code&gt;.&lt;/p&gt;
 
 &lt;img src=&#34;../../alias.png&#34;  alt=&#34;Alias&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;h1 id=&#34;macros-in-dune&#34;&gt;MACROS IN DUNE&lt;/h1&gt;
+&lt;hr&gt;
 &lt;p&gt;To write functions that modify your shell&amp;rsquo;s environment and act like commands, use a macro!&lt;/p&gt;
 
 &lt;img src=&#34;../../macros.png&#34;  alt=&#34;Macros&#34;  class=&#34;center&#34;    /&gt;
@@ -190,12 +232,14 @@
 
 &lt;p&gt;Macros, when called with zero arguments, are passed the current working directory. When invoked, they assume the environment of the callee: if you execute macro, it will execute as if you executed the contents of the macro itself with the parameter defined as the argument passed.&lt;/p&gt;
 &lt;h1 id=&#34;functional-programming&#34;&gt;FUNCTIONAL PROGRAMMING&lt;/h1&gt;
+&lt;hr&gt;
 &lt;p&gt;Dune supports functional programming! You can use functions like &lt;code&gt;map&lt;/code&gt;, &lt;code&gt;filter&lt;/code&gt;, and &lt;code&gt;reduce&lt;/code&gt; to manipulate lists and other data structures. Dune also supports anonymous functions and closures with a concise syntax.&lt;/p&gt;
 
 &lt;img src=&#34;../../functional.png&#34;  alt=&#34;Functional Programming&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;h1 id=&#34;operator-overloading&#34;&gt;OPERATOR OVERLOADING&lt;/h1&gt;
+&lt;hr&gt;
 &lt;p&gt;All of the operators in Dune are implemented as function applications on the symbols that represent them. This means that you can overload operators to do whatever you want!&lt;/p&gt;
 
 &lt;img src=&#34;../../operators.png&#34;  alt=&#34;Operator Overloading&#34;  class=&#34;center&#34;    /&gt;

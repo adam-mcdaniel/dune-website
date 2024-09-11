@@ -82,6 +82,7 @@ author = "Adam McDaniel"
  -->
 
 # ARITHMETIC OPERATORS
+---
 
 Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they're used in Python -- integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.
 
@@ -134,6 +135,7 @@ Dune allows you to index into dictionaries and lists using the `@` operator. Thi
 When used with a list, the `@` operator is used on a list with a number index (*`list@N`*). When used with a dictionary, the `@` operator is used on a dictionary with a key index, a symbol or a string (*`dict@key-name`*).
 
 # STANDARD LIBRARY
+---
 
 Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!
 
@@ -142,12 +144,14 @@ Dune offers an extensive standard library, and also provides a pretty interface 
 To see the entire standard library available to you, simply enter `std` into the command line. This will print out the entire set of nested standard library modules and their functions plus constants!
 
 # CREATING ALIASES FOR PROGRAMS
+---
 
 Dune allows you to create aliases for programs through the `let` keyword and a quoted symbol. Below, we bind the quoted symbol `'bat` to the symbol `cat`. So, whenever we use the symbol `cat`, it will evaluate to the symbol `bat`.
 
 {{< image src="../../alias.png" alt="Alias" position="center" >}}
 
 # MACROS IN DUNE
+---
 
 To write functions that modify your shell's environment and act like commands, use a macro!
 
@@ -156,12 +160,14 @@ To write functions that modify your shell's environment and act like commands, u
 Macros, when called with zero arguments, are passed the current working directory. When invoked, they assume the environment of the callee: if you execute macro, it will execute as if you executed the contents of the macro itself with the parameter defined as the argument passed.
 
 # FUNCTIONAL PROGRAMMING
+---
 
 Dune supports functional programming! You can use functions like `map`, `filter`, and `reduce` to manipulate lists and other data structures. Dune also supports anonymous functions and closures with a concise syntax.
 
 {{< image src="../../functional.png" alt="Functional Programming" position="center" >}}
 
 # OPERATOR OVERLOADING
+---
 
 All of the operators in Dune are implemented as function applications on the symbols that represent them. This means that you can overload operators to do whatever you want!
 

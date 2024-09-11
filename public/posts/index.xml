@@ -14,8 +14,25 @@
       <pubDate>Wed, 11 Sep 2024 02:38:03 -0400</pubDate>
       
       <guid>http://localhost:1313/dune-website/posts/install/</guid>
-      <description></description>
-      <content></content>
+      <description>&lt;h1 id=&#34;install-with-cargo&#34;&gt;Install With Cargo&lt;/h1&gt;
+&lt;p&gt;To install the &lt;code&gt;dunesh&lt;/code&gt; binary on your machine with &lt;code&gt;cargo&lt;/code&gt;, run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cargo install --git https://github.com/adam-mcdaniel/dune
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;post-install&#34;&gt;Post-Install&lt;/h1&gt;
+&lt;h2 id=&#34;add-to-shell-startup-script&#34;&gt;Add To Shell Startup Script&lt;/h2&gt;
+&lt;p&gt;Once you have &lt;code&gt;dunesh&lt;/code&gt; on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use &lt;code&gt;bash&lt;/code&gt;, add the following line to your &lt;code&gt;~/.bashrc&lt;/code&gt; file:&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;install-with-cargo&#34;&gt;Install With Cargo&lt;/h1&gt;
+&lt;p&gt;To install the &lt;code&gt;dunesh&lt;/code&gt; binary on your machine with &lt;code&gt;cargo&lt;/code&gt;, run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ cargo install --git https://github.com/adam-mcdaniel/dune
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;post-install&#34;&gt;Post-Install&lt;/h1&gt;
+&lt;h2 id=&#34;add-to-shell-startup-script&#34;&gt;Add To Shell Startup Script&lt;/h2&gt;
+&lt;p&gt;Once you have &lt;code&gt;dunesh&lt;/code&gt; on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use &lt;code&gt;bash&lt;/code&gt;, add the following line to your &lt;code&gt;~/.bashrc&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# At the end, start dune.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dunesh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Dune doesn&amp;rsquo;t function as a login shell, so it should mainly be used whenever you open a new terminal window or tab. If you want to use Dune in a script, you can call it directly with &lt;code&gt;dunesh&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-dune-prelude&#34;&gt;Create A Dune Prelude&lt;/h2&gt;
+&lt;p&gt;Dune uses a &lt;code&gt;.dune-prelude&lt;/code&gt; file in the &lt;code&gt;$HOME&lt;/code&gt; directory to setup the environment for your shell. This file is sourced by Dune every time it starts. You can use this file to set environment variables, define functions, or run any other shell commands you want to run every time you start a new shell session! The example on GitHub shows an example that calls a weather API to get the current weather in your area when it starts.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also recommended to create a &lt;code&gt;.dune-secrets&lt;/code&gt; file that your &lt;code&gt;.dune-prelude&lt;/code&gt; can include. This file can contain your API keys and other secrets, while still allowing you to distribute your main config in the &lt;code&gt;.dune-prelude&lt;/code&gt; file.&lt;/p&gt;
+</content>
     </item>
     
     <item>

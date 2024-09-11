@@ -6,7 +6,9 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="" />
+<meta name="description" content="Install With Cargo To install the dunesh binary on your machine with cargo, run the following command:
+$ cargo install --git https://github.com/adam-mcdaniel/dune Post-Install Add To Shell Startup Script Once you have dunesh on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use bash, add the following line to your ~/.bashrc file:
+" />
 <meta name="keywords" content="Shell" />
 
   <meta name="robots" content="noodp" />
@@ -76,7 +78,9 @@
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Install">
-<meta property="og:description" content="" />
+<meta property="og:description" content="Install With Cargo To install the dunesh binary on your machine with cargo, run the following command:
+$ cargo install --git https://github.com/adam-mcdaniel/dune Post-Install Add To Shell Startup Script Once you have dunesh on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use bash, add the following line to your ~/.bashrc file:
+" />
 <meta property="og:url" content="http://localhost:1313/dune-website/posts/install/" />
 <meta property="og:site_name" content="Dune Shell" />
 
@@ -126,7 +130,7 @@
         
       
         
-          <li><a href="/dune-website/install">Install</a></li>
+          <li><a href="/dune-website/posts/install">Install</a></li>
         
       
         
@@ -151,7 +155,7 @@
         
       
         
-          <li><a href="/dune-website/install" >Install</a></li>
+          <li><a href="/dune-website/posts/install" >Install</a></li>
         
       
         
@@ -181,7 +185,24 @@
 
   
 
-  <div class="post-content"></div>
+  <div class="post-content"><div>
+        <h1 id="install-with-cargo">Install With Cargo<a href="#install-with-cargo" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>To install the <code>dunesh</code> binary on your machine with <code>cargo</code>, run the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cargo install --git https://github.com/adam-mcdaniel/dune
+</span></span></code></pre></div><h1 id="post-install">Post-Install<a href="#post-install" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="add-to-shell-startup-script">Add To Shell Startup Script<a href="#add-to-shell-startup-script" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Once you have <code>dunesh</code> on your system, add it to the non-login startup script for whatever shell your OS provides. For example, if you use <code>bash</code>, add the following line to your <code>~/.bashrc</code> file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># At the end, start dune.</span>
+</span></span><span style="display:flex;"><span>dunesh
+</span></span></code></pre></div><p>Dune doesn&rsquo;t function as a login shell, so it should mainly be used whenever you open a new terminal window or tab. If you want to use Dune in a script, you can call it directly with <code>dunesh</code>.</p>
+<h2 id="create-a-dune-prelude">Create A Dune Prelude<a href="#create-a-dune-prelude" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Dune uses a <code>.dune-prelude</code> file in the <code>$HOME</code> directory to setup the environment for your shell. This file is sourced by Dune every time it starts. You can use this file to set environment variables, define functions, or run any other shell commands you want to run every time you start a new shell session!</p>
+<blockquote>
+<p><a href="https://github.com/adam-mcdaniel/dune/blob/main/.dune-prelude">The GitHub repository contains an example <code>.dune-prelude</code> file that calls a weather API to get the current climate in your area when it starts.</a></p>
+</blockquote>
+<p>It&rsquo;s also recommended to create a <code>.dune-secrets</code> file that your <code>.dune-prelude</code> can include. This file can contain your API keys and other secrets, while still allowing you to distribute your main config in the <code>.dune-prelude</code> file.</p>
+
+      </div></div>
 
   
     
