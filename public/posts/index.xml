@@ -34,12 +34,46 @@
       <pubDate>Wed, 11 Sep 2024 01:55:12 -0400</pubDate>
       
       <guid>http://localhost:1313/dune-website/posts/showcase/</guid>
-      <description>&lt;h1 id=&#34;piping-and-redirection&#34;&gt;PIPING AND REDIRECTION&lt;/h1&gt;
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;arithmetic-operators&#34;&gt;ARITHMETIC OPERATORS&lt;/h1&gt;
+&lt;p&gt;Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p&gt;</description>
+      <content>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;arithmetic-operators&#34;&gt;ARITHMETIC OPERATORS&lt;/h1&gt;
+&lt;p&gt;Below is the list of arithmetic operators available in Dune. These operators each behave similarly to how they&amp;rsquo;re used in Python &amp;ndash; integers and floats can be used interchangeably, but will default to integer arithmetic if both operands are integers. You can multiply lists or strings by integers to repeat them, and you can add lists or strings together to concatenate them.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Operator&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;+&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Add two expressions.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;-&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Subtract two expressions.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Multiply two expressions.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;//&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Divide two expressions.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;%&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Get the remainder after division of two expressions.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;piping-and-redirection&#34;&gt;PIPING AND REDIRECTION&lt;/h1&gt;
 &lt;p&gt;Piping and redirection are done with the &lt;code&gt;|&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; operators. Here&amp;rsquo;s some example uses!&lt;/p&gt;
-
-&lt;img src=&#34;../piping.png&#34;  alt=&#34;Piping and redirection&#34;  class=&#34;center&#34;    /&gt;
-
-
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -53,6 +87,10 @@
           &lt;td style=&#34;text-align: left&#34;&gt;Pipe the output of the left command to the input of the right command.&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Read a file&amp;rsquo;s contents.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
           &lt;td style=&#34;text-align: left&#34;&gt;Write the output of the left command to a file.&lt;/td&gt;
       &lt;/tr&gt;
@@ -62,14 +100,12 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h1 id=&#34;standard-library&#34;&gt;STANDARD LIBRARY&lt;/h1&gt;
-&lt;p&gt;Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!&lt;/p&gt;</description>
-      <content>&lt;h1 id=&#34;piping-and-redirection&#34;&gt;PIPING AND REDIRECTION&lt;/h1&gt;
-&lt;p&gt;Piping and redirection are done with the &lt;code&gt;|&lt;/code&gt;, &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; operators. Here&amp;rsquo;s some example uses!&lt;/p&gt;
 
-&lt;img src=&#34;../piping.png&#34;  alt=&#34;Piping and redirection&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../../piping.png&#34;  alt=&#34;Piping and redirection&#34;  class=&#34;center&#34;    /&gt;
 
 
+&lt;h1 id=&#34;boolean-operators&#34;&gt;BOOLEAN OPERATORS&lt;/h1&gt;
+&lt;p&gt;The basic operators for boolean logic in Dune are listed below. These operators can be used to compare values, perform boolean operations, and index into lists and dictionaries.&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -79,49 +115,90 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;|&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Pipe the output of the left command to the input of the right command.&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;!&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Perform a boolean not for one or many truthy values.&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Write the output of the left command to a file.&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Perform a boolean and for a list of truthy values.&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;Append the output of the left command to a file.&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;||&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Perform a boolean or for a list of truthy values.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;!=&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Compare two values for inequality.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;lt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Determine the order of two values.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Determine the order of two values.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;==&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Compare two values for equality.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Determine the order of two values.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Determine the order of two values.&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h1 id=&#34;container-access&#34;&gt;CONTAINER ACCESS&lt;/h1&gt;
+&lt;p&gt;Dune allows you to index into dictionaries and lists using the &lt;code&gt;@&lt;/code&gt; operator. This operator can be used to access the value at a given key in a dictionary or the value at a given index in a list.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Operator&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;@&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Index a dictionary or list.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;When used with a list, the &lt;code&gt;@&lt;/code&gt; operator is used on a list with a number index (&lt;em&gt;&lt;code&gt;list@N&lt;/code&gt;&lt;/em&gt;). When used with a dictionary, the &lt;code&gt;@&lt;/code&gt; operator is used on a dictionary with a key index, a symbol or a string (&lt;em&gt;&lt;code&gt;dict@key-name&lt;/code&gt;&lt;/em&gt;).&lt;/p&gt;
 &lt;h1 id=&#34;standard-library&#34;&gt;STANDARD LIBRARY&lt;/h1&gt;
 &lt;p&gt;Dune offers an extensive standard library, and also provides a pretty interface to see all the functions available in each module!&lt;/p&gt;
 
-&lt;img src=&#34;../math.png&#34;  alt=&#34;Math Library&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../../math.png&#34;  alt=&#34;Math Library&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;p&gt;To see the entire standard library available to you, simply enter &lt;code&gt;std&lt;/code&gt; into the command line. This will print out the entire set of nested standard library modules and their functions plus constants!&lt;/p&gt;
 &lt;h1 id=&#34;creating-aliases-for-programs&#34;&gt;CREATING ALIASES FOR PROGRAMS&lt;/h1&gt;
 &lt;p&gt;Dune allows you to create aliases for programs through the &lt;code&gt;let&lt;/code&gt; keyword and a quoted symbol. Below, we bind the quoted symbol &lt;code&gt;&#39;bat&lt;/code&gt; to the symbol &lt;code&gt;cat&lt;/code&gt;. So, whenever we use the symbol &lt;code&gt;cat&lt;/code&gt;, it will evaluate to the symbol &lt;code&gt;bat&lt;/code&gt;.&lt;/p&gt;
 
-&lt;img src=&#34;../alias.png&#34;  alt=&#34;Alias&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../../alias.png&#34;  alt=&#34;Alias&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;h1 id=&#34;macros-in-dune&#34;&gt;MACROS IN DUNE&lt;/h1&gt;
 &lt;p&gt;To write functions that modify your shell&amp;rsquo;s environment and act like commands, use a macro!&lt;/p&gt;
 
-&lt;img src=&#34;../macros.png&#34;  alt=&#34;Macros&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../../macros.png&#34;  alt=&#34;Macros&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;p&gt;Macros, when called with zero arguments, are passed the current working directory. When invoked, they assume the environment of the callee: if you execute macro, it will execute as if you executed the contents of the macro itself with the parameter defined as the argument passed.&lt;/p&gt;
 &lt;h1 id=&#34;functional-programming&#34;&gt;FUNCTIONAL PROGRAMMING&lt;/h1&gt;
 &lt;p&gt;Dune supports functional programming! You can use functions like &lt;code&gt;map&lt;/code&gt;, &lt;code&gt;filter&lt;/code&gt;, and &lt;code&gt;reduce&lt;/code&gt; to manipulate lists and other data structures. Dune also supports anonymous functions and closures with a concise syntax.&lt;/p&gt;
 
-&lt;img src=&#34;../functional.png&#34;  alt=&#34;Functional Programming&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../../functional.png&#34;  alt=&#34;Functional Programming&#34;  class=&#34;center&#34;    /&gt;
 
 
 &lt;h1 id=&#34;operator-overloading&#34;&gt;OPERATOR OVERLOADING&lt;/h1&gt;
 &lt;p&gt;All of the operators in Dune are implemented as function applications on the symbols that represent them. This means that you can overload operators to do whatever you want!&lt;/p&gt;
 
-&lt;img src=&#34;../operators.png&#34;  alt=&#34;Operator Overloading&#34;  class=&#34;center&#34;    /&gt;
+&lt;img src=&#34;../../operators.png&#34;  alt=&#34;Operator Overloading&#34;  class=&#34;center&#34;    /&gt;
 
 
 </content>
