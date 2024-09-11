@@ -1,0 +1,3 @@
+baseURL = 'https://adam-mcdaniel.github.io/dune-website/'
+languageCode = 'en-us'
+title = 'Dune Shell'

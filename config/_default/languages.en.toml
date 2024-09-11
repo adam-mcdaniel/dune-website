@@ -1,0 +1,39 @@
+
+languageName = "English"
+title = "Dune Shell"
+copyright = "© Adam McDaniel :: 2021 - 2024"
+enableGitInfo = true
+enableRobotsTXT = true
+
+[params]
+  subtitle = "A simple, retro theme for Hugo"
+  owner = "Adam McDaniel"
+  keywords = "Shell"
+  copyright = "Adam McDaniel"
+  menuMore = "Show more"
+  readMore = "Read more"
+  readOtherPosts = "Read other posts"
+  newerPosts = "Newer posts"
+  olderPosts = "Older posts"
+  missingContentMessage = "Page not found..."
+  missingBackButtonLabel = "Back to home page"
+  minuteReadingTime = "min read"
+  words = "words"
+
+[params.logo]
+  logoText = "Dune Shell"
+  logoHomeLink = ""
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/posts/about"
+  [[menu.main]]
+    identifier = "showcase"
+    name = "Showcase"
+    url = "/posts/showcase"
+  [[menu.main]]
+    identifier = "install"
+    name = "Install"
+    url = "/posts/install"
